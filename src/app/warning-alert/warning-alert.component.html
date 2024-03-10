@@ -1,1 +1,8 @@
 <p>warning-alert works!</p>
+<button class="btn btn-primary" (click)="toggleDetails()">Display Details</button>
+<p *ngIf="displayDetail">Secret password = password</p>
+<p *ngFor="let buttonClick of buttonClicks; index as i" 
+    [ngStyle]="{backgroundColor:getBackground(i)}" 
+    [ngClass]="{greaterThanFive: i >= 4}">
+    {{buttonClick}}
+</p>
