@@ -6,5 +6,9 @@ import { Component } from "@angular/core";
     styles:`p{color:green}`
 })
 export class SuccessAlertComponent{
+    username: string='';
 
+    resetUserName(){
+        this.username='';
+    }
 }
